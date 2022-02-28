@@ -4,8 +4,6 @@ html {
 
 .App {
   background-color: rgb(19, 30, 34);
-  background-image: url("./assets/images/lights.jpg");
-  background-position: left;
 }
 
 .media {
@@ -32,4 +30,7 @@ html {
     right: 50%;
     left: 50%;
   }
+}
+
+@media all and (max-width: 1024px) {
 }

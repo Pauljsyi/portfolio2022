@@ -39,6 +39,7 @@ const Hero = () => {
           fontWeight="bold"
           fontSize={["3rem", "5rem"]}
           fontFamily="Rubik"
+          opacity=".6"
         >
           PAUL JS YI
         </Text>
