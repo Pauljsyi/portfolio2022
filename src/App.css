@@ -1,3 +1,35 @@
+html {
+  background-color: rgb(19, 30, 34);
+}
+
 .App {
   background-color: rgb(19, 30, 34);
+  background-image: url("./assets/images/lights.jpg");
+  background-position: left;
+}
+
+.media {
+  transform: rotate(-90deg);
+  position: absolute;
+  color: white;
+  top: 43%;
+  left: -2.5%;
+}
+
+@media all and (max-width: 48em) {
+  .media {
+    transform: rotate(0deg);
+    top: 60%;
+    right: 50%;
+    left: 50%;
+  }
+}
+
+@media all and (max-width: 30em) {
+  .media {
+    transform: rotate(0deg);
+    top: 60%;
+    right: 50%;
+    left: 50%;
+  }
 }
