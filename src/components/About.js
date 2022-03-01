@@ -5,17 +5,32 @@ import DSG from "../assets/images/dosomethinggreat.jpg";
 
 const About = () => {
   return (
-    <Flex>
+    <Flex position="relative">
       <Image
         src={DSG}
         // position="absolute"
         style={{ zIndex: "1", opacity: ".1" }}
         backgroundColor="rgb(0, 0, 0)"
         w="100%"
-        h="auto"
+        h="100vh"
       />
-      <Box style={{ zIndex: "2" }} margin="auto" w="100%" position="absolute">
-        <Flex p="4rem" flexDir={["column", "column", "column", "row"]}>
+      <Box
+        style={{ zIndex: "2" }}
+        margin="auto"
+        w="100%"
+        position="absolute"
+        top={["0", "0", "0", "30%"]}
+        bottom="50%"
+      >
+        <Flex
+          // pt="10rem"
+          position="absolute"
+          p="1rem"
+          w="100%"
+          h="auto"
+          flexDir={["column", "column", "column", "row"]}
+          margin="auto"
+        >
           <Image
             src={AboutImage}
             p="2rem"
@@ -25,8 +40,8 @@ const About = () => {
           />
           <Box
             color="white"
-            p="2rem"
-            w="100%"
+            pl="3rem"
+            paddingRight="2rem"
             margin="auto"
             fontSize={["60%", "80%", "100%"]}
           >

@@ -35,7 +35,7 @@ const Hero = () => {
           marginRight="auto"
           marginLeft="auto"
           color="white"
-          // textShadow="3px 3px black"
+          // textShadow="-15px -5px #131E22"
           fontWeight="bold"
           fontSize={["3rem", "5rem"]}
           fontFamily="Rubik"
