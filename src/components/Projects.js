@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Box,
   Flex,
@@ -7,10 +8,20 @@ import {
   Button,
   Text,
   List,
+  Link,
 } from "@chakra-ui/react";
 import mongodb from "../assets/icons/mongodb.svg";
 
-const Projects = ({ reverse, image, heading, text, brief, tech }) => {
+const Projects = ({
+  reverse,
+  image,
+  heading,
+  text,
+  brief,
+  tech,
+  live,
+  github,
+}) => {
   const reverseSection = reverse ? "row-reverse" : "row";
   return (
     <Box>
@@ -39,24 +50,28 @@ const Projects = ({ reverse, image, heading, text, brief, tech }) => {
           </Text>
 
           <Flex>
-            <Button
-              m="1rem"
-              w="10rem"
-              backgroundColor="#E3CDA4"
-              color="black"
-              _hover={{ opacity: "70%" }}
-            >
-              Live
-            </Button>
-            <Button
-              m="1rem"
-              w="10rem"
-              backgroundColor="#E3CDA4"
-              color="black"
-              _hover={{ opacity: "70%" }}
-            >
-              GitHub
-            </Button>
+            <Link href={live}>
+              <Button
+                m="1rem"
+                w="10rem"
+                backgroundColor="#E3CDA4"
+                color="black"
+                _hover={{ opacity: "70%" }}
+              >
+                live
+              </Button>
+            </Link>
+            <Link href={github}>
+              <Button
+                m="1rem"
+                w="10rem"
+                backgroundColor="#E3CDA4"
+                color="black"
+                _hover={{ opacity: "70%" }}
+              >
+                GitHub
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
