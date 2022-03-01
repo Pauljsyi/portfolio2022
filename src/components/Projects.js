@@ -25,7 +25,11 @@ const Projects = ({
   const reverseSection = reverse ? "row-reverse" : "row";
   return (
     <Box>
-      <Flex flexDir={["column", reverseSection]} w="100%" margin="auto">
+      <Flex
+        flexDir={["column", "column", "column", reverseSection]}
+        w={["150%", "200%", "200%", "100%"]}
+        margin="auto"
+      >
         <Image
           src={image}
           objectFit="cover"
@@ -33,18 +37,22 @@ const Projects = ({
           maxH={["560"]}
         />
         <Flex
-          w={["100%", "50%"]}
-          flexDir="column"
+          w={["100%", "50%", "50%"]}
+          flexDir={["column", "column", "column"]}
           justifyContent="center"
           alignItems="center"
           p="2rem"
           m="1rem"
         >
-          <Heading color="white">{heading && heading}</Heading>
-          <Text color="white" p="2rem">
+          <Heading color="white" p="2rem">
+            {heading && heading}
+          </Heading>
+          <Text color="white" p="1rem">
             {text && text}
           </Text>
-          <Text color="white">{brief && brief}</Text>
+          <Text color="white" p="1rem">
+            {brief && brief}
+          </Text>
           <Text className="tech" color="white" fontFamily="Krona One" p="2rem">
             {tech && tech}
           </Text>
@@ -58,7 +66,7 @@ const Projects = ({
                 color="black"
                 _hover={{ opacity: "70%" }}
               >
-                live
+                Live
               </Button>
             </Link>
             <Link href={github}>
