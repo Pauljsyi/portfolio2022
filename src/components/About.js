@@ -1,34 +1,26 @@
 import React from "react";
-import { Flex, Box, Text, Image } from "@chakra-ui/react";
+import { Flex, Box, Text, Image, Heading } from "@chakra-ui/react";
 import AboutImage from "../assets/images/aboutimage.png";
 import DSG from "../assets/images/dosomethinggreat.jpg";
 
 const About = () => {
   return (
-    <Flex position="relative">
-      <Image
-        src={DSG}
-        // position="absolute"
-        style={{ zIndex: "1", opacity: ".1" }}
-        backgroundColor="rgb(0, 0, 0)"
-        w="100%"
-        h="100vh"
-      />
+    <Flex position="relative" p="5rem">
       <Box
         style={{ zIndex: "2" }}
         margin="auto"
         w="100%"
-        position="absolute"
+        // position="absolute"
         top={["0", "0", "0", "30%"]}
         bottom="50%"
       >
         <Flex
           // pt="10rem"
-          position="absolute"
+          // position="absolute"
           p="1rem"
-          w="100%"
-          h="auto"
-          flexDir={["column", "column", "column", "row"]}
+          w="80%"
+          // h="100vh"
+          flexDir={["column", "column", "column", "row", "row"]}
           margin="auto"
         >
           <Image
@@ -36,19 +28,29 @@ const About = () => {
             p="2rem"
             w="25rem"
             margin="auto"
-            opacity=".5"
+            opacity="1"
           />
           <Box
+            position="relative"
             color="white"
             pl="3rem"
             paddingRight="2rem"
             margin="auto"
-            fontSize={["60%", "80%", "100%"]}
           >
-            <Text pb="2rem" fontSize="2rem">
-              About Me
-            </Text>
-            <Text>
+            <Heading
+              pb="2rem"
+              fontSize={["1rem", "1.5rem", "2rem", "3rem"]}
+              fontFamily="Satisfy"
+            >
+              about me
+            </Heading>
+            <Text
+              fontFamily="Josefin Sans"
+              fontSize={[".7rem", ".9rem", "1.2rem", "1.3rem", "1.5rem"]}
+              fontWeight="800"
+              // color="#7E827A"
+              opacity=".9"
+            >
               I'm a full-stack Software Engineer based out of Los Angeles, CA.
               <br />
               <br />I believe a web product should look nice and easy to use. As
