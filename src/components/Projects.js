@@ -27,7 +27,11 @@ const Projects = ({
     <Box>
       <Flex
         flexDir={["column", "column", "column", reverseSection]}
+<<<<<<< HEAD
         w={["100%", "80%", "80%", "80%"]}
+=======
+        w={["150%", "200%", "200%", "100%"]}
+>>>>>>> ee2d32caf962b215eb5862ecbcddcbe8ef10b190
         margin="auto"
       >
         <Image
@@ -37,7 +41,11 @@ const Projects = ({
           maxH={["800"]}
         />
         <Flex
+<<<<<<< HEAD
           w={["100%", "100%"]}
+=======
+          w={["100%", "50%", "50%"]}
+>>>>>>> ee2d32caf962b215eb5862ecbcddcbe8ef10b190
           flexDir={["column", "column", "column"]}
           justifyContent="center"
           alignItems="center"
