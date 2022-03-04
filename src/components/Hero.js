@@ -25,7 +25,7 @@ const Hero = () => {
         src={Background}
         alt="light bar"
       />
-      <Box w="100%">
+      <Box w="80%">
         <Text
           position="absolute"
           bottom={["55%", "50%"]}

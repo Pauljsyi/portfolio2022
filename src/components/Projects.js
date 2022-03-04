@@ -24,31 +24,29 @@ const Projects = ({
 }) => {
   const reverseSection = reverse ? "row-reverse" : "row";
   return (
-    <Box>
+    <Box pt="10rem">
       <Flex
         flexDir={["column", "column", "column", reverseSection]}
         w={["100%", "80%", "80%", "80%"]}
-        w={["150%", "200%", "200%", "100%"]}
-        w={["150%", "200%", "200%", "100%"]}
         margin="auto"
       >
         <Image
           src={image}
           objectFit="cover"
-          w={["100%", "100%", "100%", "50%"]}
+          w={["100%", "100%", "50%", "50%"]}
           maxH={["800"]}
+          style={{ borderRadius: "150px" }}
         />
         <Flex
           w={["100%", "100%"]}
-          w={["100%", "50%", "50%"]}
-          w={["100%", "50%", "50%"]}
           flexDir={["column", "column", "column"]}
           justifyContent="center"
           alignItems="center"
+          fontFamily="Josefin Sans"
           // p="0.3rem"
           // m="1rem"
         >
-          <Heading color="white" p="2rem">
+          <Heading color="white" p="2rem" fontFamily="Josefin Sans">
             {heading && heading}
           </Heading>
           <Text color="white" p="1rem">

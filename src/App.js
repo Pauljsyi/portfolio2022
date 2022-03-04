@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import ParadigmGuitar from "./assets/images/paradigmguitar.png";
 import CutCulture from "./assets/images/cutculture.png";
 import AromaCo from "./assets/images/aromaco.png";
-import { Image, Button, Flex } from "@chakra-ui/react";
+import { Image, Button, Flex, Heading } from "@chakra-ui/react";
 
 import mongodb from "./assets/icons/mongodb.svg";
 
@@ -18,6 +18,14 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Heading
+          color="white"
+          textAlign="center"
+          fontFamily="Satisfy"
+          fontSize="4rem"
+        >
+          Projects
+        </Heading>
         <Projects
           image={ParadigmGuitar}
           heading="PARADIGM GUITAR"
