@@ -27,15 +27,17 @@ const Projects = ({
     <Box pt="10rem">
       <Flex
         flexDir={["column", "column", "column", reverseSection]}
-        w={["100%", "80%", "80%", "80%"]}
+        w={["80%", "80%", "80%", "80%"]}
         margin="auto"
+        bg="tomato"
       >
         <Image
           src={image}
           objectFit="cover"
           w={["100%", "100%", "50%", "50%"]}
           maxH={["800"]}
-          style={{ borderRadius: "150px" }}
+          m="auto"
+          // style={{ borderRadius: "150px" }}
         />
         <Flex
           w={["100%", "100%"]}
@@ -45,6 +47,8 @@ const Projects = ({
           fontFamily="Josefin Sans"
           // p="0.3rem"
           // m="1rem"
+          maxW="450px"
+          margin="auto"
         >
           <Heading color="white" p="2rem" fontFamily="Josefin Sans">
             {heading && heading}
@@ -52,7 +56,7 @@ const Projects = ({
           <Text color="white" p="1rem">
             {text && text}
           </Text>
-          <Text color="white" p="1rem">
+          <Text color="white" p="1rem" textAlign="center">
             {brief && brief}
           </Text>
           <Text className="tech" color="white" fontFamily="Krona One" p="2rem">
