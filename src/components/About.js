@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Box>
       <Flex
-        bg="black"
+        bg="#2f343b"
         p="1rem"
         w={["100%", "100%"]}
         h="80vh"

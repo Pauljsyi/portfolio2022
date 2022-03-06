@@ -26,18 +26,22 @@ const Projects = ({
   return (
     <Box pt="10rem">
       <Flex
-        flexDir={["column", "column", "column", reverseSection]}
+        flexDir={["column", "column", "column", "column", reverseSection]}
         w={["80%", "80%", "80%", "80%"]}
         margin="auto"
-        bg="tomato"
+        bg="#2F343B"
+        borderRadius="20px"
       >
         <Image
+          id="grad"
           src={image}
           objectFit="cover"
-          w={["100%", "100%", "50%", "50%"]}
+          pt={["1rem", "1rem", "1rem", "1rem"]}
+          pb={["1rem", "1rem", "1rem", "1rem"]}
+          w={["90%", "90%", "80%", "80%", "50%"]}
           maxH={["800"]}
+          // m={["auto", "auto", "auto", "auto", "auto"]}
           m="auto"
-          // style={{ borderRadius: "150px" }}
         />
         <Flex
           w={["100%", "100%"]}
@@ -49,17 +53,26 @@ const Projects = ({
           // m="1rem"
           maxW="450px"
           margin="auto"
+          color="white"
+          fontSize="1rem"
+          pt={["1rem", "1rem", "1rem", "1rem"]}
+          pb={["1rem", "1rem", "1rem", "1rem"]}
         >
-          <Heading color="white" p="2rem" fontFamily="Josefin Sans">
+          <Heading p="2rem" fontFamily="Josefin Sans">
             {heading && heading}
           </Heading>
-          <Text color="white" p="1rem">
+          <Text p="1rem" fontSize="1.3rem">
             {text && text}
           </Text>
-          <Text color="white" p="1rem" textAlign="center">
+          <Text p="1rem" textAlign="center" fontSize="1.3rem">
             {brief && brief}
           </Text>
-          <Text className="tech" color="white" fontFamily="Krona One" p="2rem">
+          <Text
+            className="tech"
+            fontFamily="Krona One"
+            p="2rem"
+            textAlign="center"
+          >
             {tech && tech}
           </Text>
 
