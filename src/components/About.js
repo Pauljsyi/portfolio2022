@@ -16,27 +16,27 @@ const About = () => {
   return (
     <Box id="about-container" m="auto" w="80%">
       <Flex
-        bg="#0b1214"
+        bg="#23383f"
         p="2rem"
         w="100%"
         h="auto"
         flexDir={["column", "column", "column", "column", "row", "row", "row"]}
         margin="5rem auto"
       >
-        <Image
+        {/* <Image
           src={AboutImage}
           p="2rem"
           maxW="25rem"
           w="100%"
           margin="auto"
           opacity="1"
-        />
+        /> */}
         <Box
           position="relative"
           color="white"
           margin="auto"
           // fontSize="100%"
-          w={["80%", "90%", "80%", "50%"]}
+          w={["100%", "90%", "80%", "80%", "80%", "80%"]}
         >
           {/* <Heading
             p="2rem 0"
@@ -56,6 +56,7 @@ const About = () => {
 
             // p="2rem"
             color="#7E827A"
+            color="#C77966"
             fontFamily="Josefin Sans"
           >
             I'm a full-stack Software Engineer based out of Los Angeles, CA.

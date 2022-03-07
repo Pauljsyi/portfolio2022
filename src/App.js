@@ -74,22 +74,23 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".paradigm",
-          start: "top center",
+          start: "top 80%",
           // toggleActions: "restart pause reverse pause",
           // end: "top 100px",
-          // scrub: 0.5,
+          scrub: 1,
         },
-        x: 500,
+        x: 200,
+
         duration: 1,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: ".paradigm",
-          start: "top center",
+          start: "top bottom",
           // toggleActions: "restart pause reverse pause",
           // end: "top 100px",
-          // scrub: 1,
+          scrub: 1,
         },
         x: 0,
         duration: 2,
@@ -102,22 +103,22 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".aroma",
-          start: "top center",
+          start: "top 80%",
           // toggleActions: "restart  reverse ",
           // end: "top 100px",
-          // scrub: 0.5,
+          scrub: 1,
         },
-        x: -500,
+        x: -200,
         duration: 1,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: ".aroma",
-          start: "top center",
+          start: "top bottom",
           // toggleActions: "restart  reverse ",
           // end: "top 100px",
-          // scrub: 1,
+          scrub: 1,
         },
         x: 0,
         duration: 2,
@@ -130,22 +131,22 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".cutculture",
-          start: "top center",
+          start: "top 80%",
           // toggleActions: "restart  reverse ",
           // end: "top 100px",
-          // scrub: 1,
+          scrub: 1,
         },
-        x: 500,
+        x: 200,
         duration: 1,
         opacity: 0,
       },
       {
         scrollTrigger: {
           trigger: ".cutculture",
-          start: "top center",
+          start: "top bottom",
           // toggleActions: "restart  reverse ",
           // end: "top 100px",
-          // scrub: 1,
+          scrub: 1,
         },
         x: 0,
         duration: 2,
@@ -160,20 +161,20 @@ function App() {
       <Hero />
       <Heading
         id="projects"
-        color="white"
+        color="#7E827A"
         textAlign="center"
         fontFamily="Satisfy"
-        fontSize="4rem"
+        fontSize={["2rem", "3rem", "4rem"]}
       >
         about me
       </Heading>
       <About />
       <Heading
         id="projects"
-        color="white"
+        color="#7E827A"
         textAlign="center"
         fontFamily="Satisfy"
-        fontSize="4rem"
+        fontSize={["2rem", "3rem", "4rem"]}
       >
         projects
       </Heading>

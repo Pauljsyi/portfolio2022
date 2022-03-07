@@ -37,7 +37,7 @@ const Hero = () => {
           color="white"
           textShadow="10px 10px #131E22"
           fontWeight="bold"
-          fontSize={["3rem", "4rem"]}
+          fontSize={["2rem", "3rem", "4rem"]}
           fontFamily="Comfortaa"
           // opacity=".6"
         >

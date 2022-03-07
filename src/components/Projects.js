@@ -30,7 +30,8 @@ const Projects = ({
         flexDir={["column", "column", "column", "column", reverseSection]}
         w={["80%", "80%", "50%", "50%", "80%"]}
         // margin="auto"
-        bg="#0b1214"
+        bg="#23383f"
+        // bg="black"
         m="5rem auto"
         // borderRadius="20px"
       >
@@ -79,11 +80,11 @@ const Projects = ({
           </Text>
 
           <Flex>
-            <Link href={live}>
+            <Link href={live} style={{ textDecoration: "none" }}>
               <Button
                 m="1rem"
                 w={["4rem", "6rem", "8rem"]}
-                backgroundColor="white"
+                backgroundColor="#66b4c7"
                 color="black"
                 _hover={{ opacity: "70%" }}
                 fontSize={[".5rem", ".8rem", "1rem", "1.2rem"]}
@@ -91,11 +92,11 @@ const Projects = ({
                 Live
               </Button>
             </Link>
-            <Link href={github}>
+            <Link href={github} style={{ textDecoration: "none" }}>
               <Button
                 m="1rem"
                 w={["4rem", "6rem", "8rem"]}
-                backgroundColor="white"
+                backgroundColor="#66b4c7"
                 color="black"
                 _hover={{ opacity: "70%" }}
                 fontSize={[".5rem", ".8rem", "1rem", "1.2rem"]}

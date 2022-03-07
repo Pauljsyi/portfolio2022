@@ -1,9 +1,24 @@
-html {
-  background-color: rgb(19, 30, 34);
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: rgb(0, 0, 0);
 }
 
+body.chakra-ui-light {
+  background: black;
+}
+html {
+  background: rgb(0, 0, 0);
+}
 .App {
-  background-color: rgb(19, 30, 34);
+  /* background-color: rgb(19, 30, 34); */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 30, 34, 1) 69%
+  );
 }
 
 .media {

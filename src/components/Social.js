@@ -15,7 +15,7 @@ const Social = () => {
         m="1rem"
         style={{ textDecoration: "none" }}
       >
-        <Text fontSize="1.5rem">linkedin</Text>
+        <Text fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}>linkedin</Text>
       </Link>
       <Link
         href="https://www.github.com/pauljsyi"
@@ -23,7 +23,7 @@ const Social = () => {
         style={{ textDecoration: "none" }}
         h="auto"
       >
-        <Text fontSize="1.5rem">github</Text>
+        <Text fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}>github</Text>
       </Link>
     </Flex>
   );
