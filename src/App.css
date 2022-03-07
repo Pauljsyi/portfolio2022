@@ -14,25 +14,10 @@ html {
   left: 0;
 }
 
-.tech {
-  word-spacing: 2rem;
-}
-
-/* .honeycomb {
-  width: 100%;
-  -webkit-clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-} */
-
-.social-link {
-  text-decoration: none;
+.hero-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 
 @media all and (max-width: 48em) {

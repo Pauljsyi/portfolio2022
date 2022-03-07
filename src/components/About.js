@@ -17,7 +17,7 @@ const About = () => {
     <Box id="about-container" m="auto">
       <Flex
         bg="#0b1214"
-        p="5rem"
+        p="2rem"
         w="100%"
         h="auto"
         flexDir={["column", "column", "column", "column", "row", "row", "row"]}

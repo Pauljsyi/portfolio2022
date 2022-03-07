@@ -19,7 +19,7 @@ const Hero = () => {
         className="hero-img"
         // position="absolute"
         h="100vh"
-        w={["100%", "100%", "100%"]}
+        // w={["100%", "100%", "100%"]}
         // left="25%"
         // right="25%"
         src={Background}
@@ -28,20 +28,20 @@ const Hero = () => {
       <Box w="80%">
         <Text
           position="absolute"
-          bottom={["55%", "50%"]}
+          bottom={["55%", "55%"]}
           left="0"
           right="0"
           textAlign="center"
           marginRight="auto"
           marginLeft="auto"
-          color="white"
-          // textShadow="-15px -5px #131E22"
+          color="black"
+          textShadow="10px 10px #131E22"
           fontWeight="bold"
-          fontSize={["3rem", "5rem"]}
-          fontFamily="Rubik"
-          opacity=".6"
+          fontSize={["3rem", "4rem"]}
+          fontFamily="Comfortaa"
+          // opacity=".6"
         >
-          PAUL JS YI
+          p a u l . j s . y i
         </Text>
         <Text
           position="absolute"

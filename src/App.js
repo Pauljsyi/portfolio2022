@@ -5,11 +5,14 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Skill from "./components/Skill";
 import ParadigmGuitar from "./assets/images/paradigmguitar.png";
 import CutCulture from "./assets/images/cutculture.png";
 import AromaCo from "./assets/images/aromaco.png";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { Image, Button, Flex, Heading } from "@chakra-ui/react";
 import AboutImage from "./assets/images/aboutimage.png";
 
@@ -63,22 +66,93 @@ function App() {
       });
   }, []);
 
-  // useEffect(() => {
-  //   tl.current = gsap.to(".logo1", {
-  //     delay: 3,
-  //     duration: 1.5,
-  //     rotate: 90,
-  //     opacity: 0,
-  //     ease: "back",
-  //   });
-  //   tl.current = gsap.to(".logo2", {
-  //     delay: 3,
-  //     duration: 1.5,
-  //     rotate: 90,
-  //     opacity: 1,
-  //     ease: "back",
-  //   });
-  // });
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".paradigm",
+      {
+        scrollTrigger: {
+          trigger: ".paradigm",
+          start: "top center",
+          // toggleActions: "restart pause reverse pause",
+          // end: "top 100px",
+          // scrub: 0.5,
+        },
+        x: 500,
+        duration: 1,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: ".paradigm",
+          start: "top center",
+          // toggleActions: "restart pause reverse pause",
+          // end: "top 100px",
+          // scrub: 1,
+        },
+        x: 0,
+        duration: 2,
+        opacity: 1,
+      }
+    );
+
+    gsap.fromTo(
+      ".aroma",
+      {
+        scrollTrigger: {
+          trigger: ".aroma",
+          start: "top center",
+          // toggleActions: "restart  reverse ",
+          // end: "top 100px",
+          // scrub: 0.5,
+        },
+        x: -500,
+        duration: 1,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: ".aroma",
+          start: "top center",
+          // toggleActions: "restart  reverse ",
+          // end: "top 100px",
+          // scrub: 1,
+        },
+        x: 0,
+        duration: 2,
+        opacity: 1,
+      }
+    );
+
+    gsap.fromTo(
+      ".cutculture",
+      {
+        scrollTrigger: {
+          trigger: ".cutculture",
+          start: "top center",
+          // toggleActions: "restart  reverse ",
+          // end: "top 100px",
+          // scrub: 1,
+        },
+        x: 500,
+        duration: 1,
+        opacity: 0,
+      },
+      {
+        scrollTrigger: {
+          trigger: ".cutculture",
+          start: "top center",
+          // toggleActions: "restart  reverse ",
+          // end: "top 100px",
+          // scrub: 1,
+        },
+        x: 0,
+        duration: 2,
+        opacity: 1,
+      }
+    );
+  });
   return (
     <div className="App" ref={el}>
       {/* <Router> */}
@@ -86,6 +160,7 @@ function App() {
       <Hero />
       <About />
       <Heading
+        id="projects"
         color="white"
         textAlign="center"
         fontFamily="Satisfy"
@@ -94,6 +169,7 @@ function App() {
         Projects
       </Heading>
       <Projects
+        classname="paradigm"
         image={ParadigmGuitar}
         heading="PARADIGM GUITAR"
         text="An e-commerce website for a boutique guitar store"
@@ -103,6 +179,7 @@ function App() {
       />
 
       <Projects
+        classname="aroma"
         reverse
         image={AromaCo}
         heading="AROMA CO"
@@ -112,6 +189,7 @@ function App() {
         github="https://github.com/Pauljsyi/shopify-react"
       />
       <Projects
+        classname="cutculture"
         image={CutCulture}
         heading="CUT CULTURE"
         text="Website to showcase animations using GSAP"
@@ -131,6 +209,7 @@ function App() {
         <Skill image={Nodejs} bg="white" />
         <Skill image={Shopify} bg="rgb(9, 17, 32)" />
       </Flex> */}
+      <Contact />
     </div>
   );
 }

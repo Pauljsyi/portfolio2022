@@ -45,17 +45,21 @@ const Navbar = () => {
         fontWeight="bold"
         p="1rem"
       >
-        <Link href="#about-container">
+        <Link href="#about-container" style={{ textDecoration: "none" }}>
           <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
             About
           </Text>
         </Link>
-        <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
-          Work
-        </Text>
-        <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
-          Contact
-        </Text>
+        <Link href="#projects" style={{ textDecoration: "none" }}>
+          <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
+            Work
+          </Text>
+        </Link>
+        {/* <Link href="#" style={{ textDecoration: "none" }}>
+          <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
+            Contact
+          </Text>
+        </Link> */}
       </Flex>
     </Flex>
   );
