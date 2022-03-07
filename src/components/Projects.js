@@ -30,7 +30,7 @@ const Projects = ({
         flexDir={["column", "column", "column", "column", reverseSection]}
         w={["80%", "80%", "50%", "50%", "80%"]}
         // margin="auto"
-        bg="#23383f"
+        bg="#0b1214"
         m="5rem auto"
         // borderRadius="20px"
       >

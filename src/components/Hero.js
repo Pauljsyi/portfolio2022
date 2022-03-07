@@ -34,7 +34,7 @@ const Hero = () => {
           textAlign="center"
           marginRight="auto"
           marginLeft="auto"
-          color="black"
+          color="white"
           textShadow="10px 10px #131E22"
           fontWeight="bold"
           fontSize={["3rem", "4rem"]}

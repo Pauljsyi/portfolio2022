@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Flex
       className="navbar"
-      w="100%"
+      w={["100%", "100%", "80%"]}
       m="auto"
       backgroundColor="rgb(19, 30, 34)"
       flexDir="row"
@@ -17,7 +17,7 @@ const Navbar = () => {
       p="1rem"
       z-index="1"
     >
-      <Link href="/">
+      <Link href="/" style={{ boxShadow: "none" }}>
         <Image
           className="logo1"
           position="absolute"
@@ -45,15 +45,15 @@ const Navbar = () => {
         fontWeight="bold"
         p="1rem"
       >
-        <Link href="#about-container" style={{ textDecoration: "none" }}>
-          <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
-            About
-          </Text>
+        <Link
+          href="#about-container"
+          m="1rem"
+          style={{ textDecoration: "none" }}
+        >
+          <Text fontSize={["1em", "1.5em", "2em"]}>About</Text>
         </Link>
-        <Link href="#projects" style={{ textDecoration: "none" }}>
-          <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
-            Work
-          </Text>
+        <Link href="#projects" m="1rem" style={{ textDecoration: "none" }}>
+          <Text fontSize={["1em", "1.5em", "2em"]}>Work</Text>
         </Link>
         {/* <Link href="#" style={{ textDecoration: "none" }}>
           <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>

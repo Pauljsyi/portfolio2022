@@ -14,7 +14,7 @@ import Shopify from "../assets/icons/shopify1.svg";
 
 const About = () => {
   return (
-    <Box id="about-container" m="auto">
+    <Box id="about-container" m="auto" w="80%">
       <Flex
         bg="#0b1214"
         p="2rem"
@@ -38,19 +38,20 @@ const About = () => {
           // fontSize="100%"
           w={["80%", "90%", "80%", "50%"]}
         >
-          <Heading
-            pb="2rem"
+          {/* <Heading
+            p="2rem 0"
             // fontSize={["1rem", "1.5rem", "2rem", "3rem"]}
-            fontSize={["1.2rem", "2rem", "3rem"]}
+            fontSize={["1.2rem", "2rem", "4rem"]}
             fontFamily="Satisfy"
           >
             about me
-          </Heading>
+          </Heading> */}
           <Text
             fontFamily="Josefin Sans"
             // fontSize={[".7rem", ".9rem", "1.2rem", "1.3rem", "1.5rem"]}
             fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}
             fontWeight="800"
+            p="2rem"
             // maxW="50%"
 
             // p="2rem"

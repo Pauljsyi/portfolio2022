@@ -158,6 +158,15 @@ function App() {
       {/* <Router> */}
       <Navbar />
       <Hero />
+      <Heading
+        id="projects"
+        color="white"
+        textAlign="center"
+        fontFamily="Satisfy"
+        fontSize="4rem"
+      >
+        about me
+      </Heading>
       <About />
       <Heading
         id="projects"
@@ -166,7 +175,7 @@ function App() {
         fontFamily="Satisfy"
         fontSize="4rem"
       >
-        Projects
+        projects
       </Heading>
       <Projects
         classname="paradigm"

@@ -11,14 +11,19 @@ const Social = () => {
       fontWeight="bold"
     >
       <Link
-        className="social-link"
         href="https://www.linkedin.com/in/pauljsyi"
-        p="1rem"
+        m="1rem"
+        style={{ textDecoration: "none" }}
       >
-        <Text fontSize=".9rem">linkedin</Text>
+        <Text fontSize="1.5rem">linkedin</Text>
       </Link>
-      <Link href="https://www.github.com/pauljsyi" p="1rem">
-        <Text fontSize=".9rem">github</Text>
+      <Link
+        href="https://www.github.com/pauljsyi"
+        m="1rem"
+        style={{ textDecoration: "none" }}
+        h="auto"
+      >
+        <Text fontSize="1.5rem">github</Text>
       </Link>
     </Flex>
   );
