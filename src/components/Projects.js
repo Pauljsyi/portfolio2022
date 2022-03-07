@@ -24,54 +24,54 @@ const Projects = ({
 }) => {
   const reverseSection = reverse ? "row-reverse" : "row";
   return (
-    <Box pt="10rem">
+    <Box>
       <Flex
         flexDir={["column", "column", "column", "column", reverseSection]}
         w={["80%", "80%", "80%", "80%"]}
-        margin="auto"
-        bg="#2F343B"
-        borderRadius="20px"
+        // margin="auto"
+        bg="#23383f"
+        m="5rem auto"
+        // borderRadius="20px"
       >
         <Image
           id="grad"
           src={image}
           objectFit="cover"
-          pt={["1rem", "1rem", "1rem", "1rem"]}
-          pb={["1rem", "1rem", "1rem", "1rem"]}
-          w={["90%", "90%", "80%", "80%", "50%"]}
-          maxH={["800"]}
+          // pt={["1rem", "1rem", "1rem", "1rem"]}
+          // pb={["1rem", "1rem", "1rem", "1rem"]}
+          w={["100%", "100%", "100%", "100%", "50%"]}
+          maxH={["400px"]}
           // m={["auto", "auto", "auto", "auto", "auto"]}
-          m="auto"
+          // m="auto"
         />
         <Flex
           w={["100%", "100%"]}
           flexDir={["column", "column", "column"]}
           justifyContent="center"
           alignItems="center"
-          fontFamily="Josefin Sans"
+          // fontFamily="Josefin Sans"
           // p="0.3rem"
           // m="1rem"
           maxW="450px"
           margin="auto"
           color="white"
           fontSize="1rem"
-          pt={["1rem", "1rem", "1rem", "1rem"]}
-          pb={["1rem", "1rem", "1rem", "1rem"]}
+          p="0"
+          textAlign="center"
         >
-          <Heading p="2rem" fontFamily="Josefin Sans">
+          <Heading p="1rem" fontSize={["1.2rem", "2rem", "3rem"]}>
             {heading && heading}
           </Heading>
-          <Text p="1rem" fontSize="1.3rem">
+          <Text p="1rem" fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}>
             {text && text}
           </Text>
-          <Text p="1rem" textAlign="center" fontSize="1.3rem">
-            {brief && brief}
-          </Text>
+
           <Text
             className="tech"
             fontFamily="Krona One"
             p="2rem"
             textAlign="center"
+            fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}
           >
             {tech && tech}
           </Text>
@@ -81,7 +81,7 @@ const Projects = ({
               <Button
                 m="1rem"
                 w={["5rem", "10rem"]}
-                backgroundColor="#E3CDA4"
+                backgroundColor="white"
                 color="black"
                 _hover={{ opacity: "70%" }}
               >
@@ -92,7 +92,7 @@ const Projects = ({
               <Button
                 m="1rem"
                 w={["5rem", "10rem"]}
-                backgroundColor="#E3CDA4"
+                backgroundColor="white"
                 color="black"
                 _hover={{ opacity: "70%" }}
               >

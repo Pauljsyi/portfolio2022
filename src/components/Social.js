@@ -10,7 +10,11 @@ const Social = () => {
       fontFamily="Josefin Sans"
       fontWeight="bold"
     >
-      <Link href="https://www.linkedin.com/in/pauljsyi" p="1rem">
+      <Link
+        className="social-link"
+        href="https://www.linkedin.com/in/pauljsyi"
+        p="1rem"
+      >
         <Text fontSize=".9rem">linkedin</Text>
       </Link>
       <Link href="https://www.github.com/pauljsyi" p="1rem">
