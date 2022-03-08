@@ -33,6 +33,56 @@ function App() {
   // LOGO ANIMATION
 
   useEffect(() => {
+    document.addEventListener("DOMContentLoaded", () => {
+      let logo = document.querySelector(".logo");
+
+      logo.addEventListener("mouseover", () => {
+        let logoimg = logo.querySelectorAll(".logo1");
+        tl.current = gsap
+          .timeline()
+          .to(q(".logo1"), {
+            rotate: 90,
+            duration: 1,
+            // delay: 2,
+            opacity: 0,
+            ease: "expo",
+          })
+          .to(q(".logo1"), {
+            rotate: -0,
+            duration: 1,
+            delay: 1.5,
+            opacity: 1,
+            ease: "expo",
+          });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      let logo = document.querySelector(".logo");
+
+      logo.addEventListener("mouseover", () => {
+        let logoimg = logo.querySelectorAll(".logo2");
+        tl.current = gsap
+          .timeline()
+          .to(q(".logo2"), {
+            rotate: 90,
+            duration: 1,
+            // delay: 2,
+            opacity: 1,
+            ease: "expo",
+          })
+          .to(q(".logo2"), {
+            rotate: -0,
+            duration: 1,
+            delay: 1.5,
+            opacity: 0,
+            ease: "expo",
+          });
+      });
+    });
+  }, []);
+
+  useEffect(() => {
     tl.current = gsap
       .timeline()
       .to(q(".logo1"), {
@@ -40,14 +90,14 @@ function App() {
         duration: 1,
         delay: 2,
         opacity: 0,
-        ease: "back",
+        ease: "expo",
       })
       .to(q(".logo1"), {
         rotate: -0,
         duration: 1,
-        delay: 2,
+        delay: 1.5,
         opacity: 1,
-        ease: "back",
+        ease: "expo",
       });
 
     tl.current = gsap
@@ -57,14 +107,14 @@ function App() {
         duration: 1,
         delay: 2,
         opacity: 1,
-        ease: "back",
+        ease: "expo",
       })
       .to(q(".logo2"), {
         rotate: -0,
         duration: 1,
-        delay: 2,
+        delay: 1.5,
         opacity: 0,
-        ease: "back",
+        ease: "expo",
       });
   }, []);
 

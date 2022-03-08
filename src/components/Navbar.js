@@ -17,7 +17,7 @@ const Navbar = () => {
       p="1rem"
       z-index="1"
     >
-      <Link href="/" style={{ boxShadow: "none" }}>
+      <Link href="/" style={{ boxShadow: "none" }} className="logo">
         <Image
           className="logo1"
           position="absolute"
