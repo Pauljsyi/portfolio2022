@@ -237,7 +237,8 @@ function App() {
         image={ParadigmGuitar}
         heading="PARADIGM GUITAR"
         text="An e-commerce website for a boutique guitar store"
-        tech="mongodb express react node s3 ec2 nginx"
+        brief="Using the MVC architecture, this website is deployed on Amazon's EC2 cloud server with NGINX as the web server"
+        tech="react node express mongodb aws nginx"
         live="http://www.paradigmguitar.pauljsyi.com/"
         github="https://github.com/Pauljsyi/paradigmguitar-showcase"
       />
@@ -247,7 +248,8 @@ function App() {
         image={AromaCo}
         heading="AROMA CO"
         text="An e-commerce website for scented candles"
-        tech="shopify react chakra-ui animista heroku"
+        brief="Built a custom Shopify Storefront using React.js and the Shopify Buy SDK. Styled using Chakra UI, persistent cart data using local storage, utilized React Context, and basic animations"
+        tech="react chakra-ui shopify animista heroku"
         live="http://www.aromaco.pauljsyi.com/"
         github="https://github.com/Pauljsyi/shopify-react"
       />
@@ -255,7 +257,8 @@ function App() {
         classname="cutculture"
         image={CutCulture}
         heading="CUT CULTURE"
-        text="Website to showcase animations using GSAP"
+        text="Website to showcase animations using GSAP and Threejs"
+        brief="Vanilla Javascript project with animations using the hovereffectjs library"
         tech="html css javascript gsap threejs hovereffectjs"
         live="http://cutculture.pauljsyi.com/"
         github="https://github.com/Pauljsyi/cutculture"

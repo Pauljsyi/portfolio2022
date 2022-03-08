@@ -18,6 +18,7 @@ const Projects = ({
   image,
   heading,
   text,
+  brief,
   tech,
   live,
   github,
@@ -25,7 +26,7 @@ const Projects = ({
   const reverseSection = reverse ? "row-reverse" : "row";
 
   return (
-    <Box className={classname}>
+    <Box className={classname} p="1rem">
       <Flex
         flexDir={["column", "column", "column", "column", reverseSection]}
         w={["80%", "80%", "50%", "50%", "80%"]}
@@ -42,7 +43,7 @@ const Projects = ({
           // pt={["1rem", "1rem", "1rem", "1rem"]}
           // pb={["1rem", "1rem", "1rem", "1rem"]}
           w={["100%", "100%", "100%", "100%", "50%"]}
-          maxH={["400px"]}
+          h="auto"
           // m={["auto", "auto", "auto", "auto", "auto"]}
           // m="auto"
         />
@@ -54,11 +55,11 @@ const Projects = ({
           // fontFamily="Josefin Sans"
           // p="0.3rem"
           // m="1rem"
-          maxW="450px"
+          // maxW="450px"
           margin="auto"
           color="white"
           fontSize="1rem"
-          p="0"
+          p="3rem"
           textAlign="center"
           fontFamily="Comfortaa"
         >
@@ -71,6 +72,9 @@ const Projects = ({
           </Heading>
           <Text p="1rem" fontSize={[".5rem", ".8rem", "1rem", "1.2rem"]}>
             {text && text}
+          </Text>
+          <Text p="1rem" fontSize={[".5rem", ".8rem", "1rem", "1.2rem"]}>
+            {brief && brief}
           </Text>
 
           <Text
