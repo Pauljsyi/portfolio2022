@@ -115,8 +115,9 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".paradigm",
-          start: "top 80%",
-          scrub: 1,
+          start: "top 100%",
+          end: "top center",
+          scrub: 3,
         },
         x: 200,
 
@@ -126,8 +127,9 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".paradigm",
-          start: "top bottom",
-          scrub: 1,
+          start: "top 100%",
+          end: "top 30%",
+          scrub: 3,
         },
         x: 0,
         duration: 2,
@@ -140,7 +142,8 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".aroma",
-          start: "top 80%",
+          start: "top 100%",
+          end: "top center",
           scrub: 1,
         },
         x: -200,
@@ -150,7 +153,8 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".aroma",
-          start: "top bottom",
+          start: "top 100%",
+          end: "top 30%",
           scrub: 1,
         },
         x: 0,
@@ -164,7 +168,8 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".cutculture",
-          start: "top 80%",
+          start: "top 100%",
+          end: "top center",
           scrub: 1,
         },
         x: 200,
@@ -174,7 +179,8 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".cutculture",
-          start: "top bottom",
+          start: "top 100%",
+          end: "top 30%",
           scrub: 1,
         },
         x: 0,
