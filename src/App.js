@@ -96,7 +96,7 @@ function App() {
           // end: "top 100px",
           scrub: 1,
         },
-        x: 0,
+        x: 50,
         duration: 2,
         opacity: 1,
       }
@@ -124,7 +124,7 @@ function App() {
           // end: "top 100px",
           scrub: 1,
         },
-        x: 0,
+        x: -50,
         duration: 2,
         opacity: 1,
       }
@@ -152,7 +152,7 @@ function App() {
           // end: "top 100px",
           scrub: 1,
         },
-        x: 0,
+        x: 50,
         duration: 2,
         opacity: 1,
       }
