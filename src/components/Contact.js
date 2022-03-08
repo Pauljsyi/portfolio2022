@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Image, Button, Flex, Heading, Box } from "@chakra-ui/react";
 import {
   FormControl,
@@ -6,6 +7,7 @@ import {
   FormErrorMessage,
   FormHelperText,
   Input,
+  Textarea,
 } from "@chakra-ui/react";
 
 const Contact = () => {
@@ -17,10 +19,8 @@ const Contact = () => {
       m="5rem auto"
       bg="white"
       opacity=".8"
+      p="5rem 0"
     >
-      <Heading textAlign="center" pb="5rem">
-        Stay In Touch
-      </Heading>
       <FormControl>
         <Flex>
           <Box w="50%" p="1rem">
@@ -32,10 +32,14 @@ const Contact = () => {
             <Input id="last-name" placeholder="Last name" />
           </Box>
         </Flex>
-        <Box w="90%" p="1rem">
+        <Box w="100%" p="1rem">
           <FormLabel htmlFor="email">Email address</FormLabel>
-          <Input id="email" type="email" />
-          <FormHelperText>Your email is safe with us ;)</FormHelperText>
+          <Input id="email" type="email" placeholder="email address" />
+          <FormHelperText>Your email is safe with me ;)</FormHelperText>
+        </Box>
+        <Box p="1rem">
+          <FormLabel htmlFor="email">Comment</FormLabel>
+          <Textarea placeholder="Hello Paul, I'd like to work with you!" />
         </Box>
       </FormControl>
     </Box>

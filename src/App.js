@@ -30,6 +30,8 @@ function App() {
   const q = gsap.utils.selector(el);
   const tl = useRef();
 
+  // LOGO ANIMATION
+
   useEffect(() => {
     tl.current = gsap
       .timeline()
@@ -65,6 +67,8 @@ function App() {
         ease: "back",
       });
   }, []);
+
+  // PROJECT VIEW ANIMATION
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -154,9 +158,9 @@ function App() {
       }
     );
   });
+
   return (
     <div className="App" ref={el}>
-      {/* <Router> */}
       <Navbar />
       <Hero />
       <Heading
@@ -187,7 +191,6 @@ function App() {
         live="http://www.paradigmguitar.pauljsyi.com/"
         github="https://github.com/Pauljsyi/paradigmguitar-showcase"
       />
-
       <Projects
         classname="aroma"
         reverse
@@ -207,18 +210,15 @@ function App() {
         live="http://cutculture.pauljsyi.com/"
         github="https://github.com/Pauljsyi/cutculture"
       />
-      {/* <Flex >
-        <Skill image={MongoDB} bg="black" />
-        <Skill image={Adobe} bg="rgb(244, 67, 54)" />
-        <Skill image={Amazon} bg="white" />
-        <Skill image={Css3} bg="rgb(21, 114, 182)" />
-      </Flex>
-      <Flex>
-        <Skill image={Javascript} bg="rgb(247, 223, 30)" />
-        <Skill image={Nginx} bg="white" />
-        <Skill image={Nodejs} bg="white" />
-        <Skill image={Shopify} bg="rgb(9, 17, 32)" />
-      </Flex> */}
+      <Heading
+        id="contact"
+        color="#7E827A"
+        textAlign="center"
+        fontFamily="Satisfy"
+        fontSize={["2rem", "3rem", "4rem"]}
+      >
+        stay in touch
+      </Heading>
       <Contact />
     </div>
   );

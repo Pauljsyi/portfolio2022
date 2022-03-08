@@ -55,11 +55,11 @@ const Navbar = () => {
         <Link href="#projects" m="1rem" style={{ textDecoration: "none" }}>
           <Text fontSize={["1em", "1.5em", "2em"]}>Work</Text>
         </Link>
-        {/* <Link href="#" style={{ textDecoration: "none" }}>
+        <Link href="#contact" style={{ textDecoration: "none" }}>
           <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
             Contact
           </Text>
-        </Link> */}
+        </Link>
       </Flex>
     </Flex>
   );
