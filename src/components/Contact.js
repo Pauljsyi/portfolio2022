@@ -39,19 +39,26 @@ const Contact = () => {
       // opacity=".6"
       p="0"
     >
-      <form ref={form} onSubmit={sendEmail}>
-        <Flex p="1rem" flexDir="column">
-          <FormLabel>Name</FormLabel>
-          <Input type="text" name="user_name" placeholder="full name" />
-
-          <FormLabel>Email</FormLabel>
-          <Input type="email" name="user_email" placeholder="email address" />
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        style={{ width: "80%", margin: "auto" }}
+      >
+        <Flex p="2rem" flexDir="column">
+          <Box p="1rem 0">
+            <FormLabel>Name</FormLabel>
+            <Input type="text" name="user_name" placeholder="full name" />
+          </Box>
+          <Box p="1rem 0">
+            <FormLabel>Email</FormLabel>
+            <Input type="email" name="user_email" placeholder="email address" />
+          </Box>
         </Flex>
-        <Flex p="1rem" flexDir="column">
+        <Flex p="0 2rem" flexDir="column">
           <FormLabel>Message</FormLabel>
           <Textarea name="message" placeholder="say something nice" />
         </Flex>
-        <Flex p="1rem">
+        <Flex p="2rem">
           <Input
             type="submit"
             value="Send"
