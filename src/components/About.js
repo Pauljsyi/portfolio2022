@@ -14,7 +14,7 @@ import Shopify from "../assets/icons/shopify1.svg";
 
 const About = () => {
   return (
-    <Box id="about-container" m="auto" w="80%">
+    <Box id="about-container" m="auto" w="70%">
       <Flex
         bg="#23383f"
         p="2rem"
@@ -55,8 +55,8 @@ const About = () => {
             // maxW="50%"
 
             // p="2rem"
-            color="#7E827A"
-            color="#C77966"
+            color="white"
+            // color="#C77966"
           >
             I'm a full-stack Software Engineer based out of Los Angeles, CA.
             <br />

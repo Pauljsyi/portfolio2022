@@ -49,6 +49,7 @@ const Hero = () => {
           w="100%"
           textAlign="center"
           color="#7E827A"
+          color="#C77966"
           fontWeight="bold"
           fontSize={["1rem", "2rem"]}
           fontFamily="Satisfy"

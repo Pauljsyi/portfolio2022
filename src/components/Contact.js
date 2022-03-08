@@ -49,15 +49,16 @@ const Contact = () => {
         </Flex>
         <Flex p="1rem" flexDir="column">
           <FormLabel>Message</FormLabel>
-          <Textarea name="message" />
+          <Textarea name="message" placeholder="say something nice" />
         </Flex>
         <Flex p="1rem">
           <Input
             type="submit"
             value="Send"
-            bg="rgb(44, 122, 123)"
+            bg="rgb(80, 140, 155)"
             fontWeight="bold"
             color="white"
+            cursor="pointer"
           />
         </Flex>
       </form>

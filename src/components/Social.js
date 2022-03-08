@@ -6,7 +6,7 @@ const Social = () => {
     <Flex
       className="media"
       color="#7E827A"
-      color="#C77966"
+      // color="#C77966"
       fontFamily="Josefin Sans"
       fontWeight="bold"
     >
