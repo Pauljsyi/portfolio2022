@@ -10,6 +10,7 @@ body.chakra-ui-light {
 }
 html {
   background: rgb(0, 0, 0);
+  scroll-behavior: smooth;
 }
 .App {
   /* background-color: rgb(19, 30, 34); */
