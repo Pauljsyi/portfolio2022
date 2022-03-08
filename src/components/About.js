@@ -47,17 +47,16 @@ const About = () => {
             about me
           </Heading> */}
           <Text
-            fontFamily="Josefin Sans"
+            fontFamily="Comfortaa"
             // fontSize={[".7rem", ".9rem", "1.2rem", "1.3rem", "1.5rem"]}
             fontSize={[".8rem", "1rem", "1.1rem", "1.5rem"]}
             fontWeight="800"
-            p="2rem"
+            p={["0", "2rem"]}
             // maxW="50%"
 
             // p="2rem"
             color="#7E827A"
             color="#C77966"
-            fontFamily="Josefin Sans"
           >
             I'm a full-stack Software Engineer based out of Los Angeles, CA.
             <br />

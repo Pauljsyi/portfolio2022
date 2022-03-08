@@ -60,8 +60,13 @@ const Projects = ({
           fontSize="1rem"
           p="0"
           textAlign="center"
+          fontFamily="Comfortaa"
         >
-          <Heading p="1rem" fontSize={["1.2rem", "2rem", "2rem"]}>
+          <Heading
+            p="1rem"
+            fontSize={["1.2rem", "2rem", "2rem"]}
+            fontFamily="Comfortaa"
+          >
             {heading && heading}
           </Heading>
           <Text p="1rem" fontSize={[".5rem", ".8rem", "1rem", "1.2rem"]}>
