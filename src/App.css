@@ -3,6 +3,10 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background: rgb(0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body.chakra-ui-light {

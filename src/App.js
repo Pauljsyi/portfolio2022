@@ -1,29 +1,18 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Skill from "./components/Skill";
 import ParadigmGuitar from "./assets/images/paradigmguitar.png";
 import CutCulture from "./assets/images/cutculture.png";
 import AromaCo from "./assets/images/aromaco.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { Image, Button, Flex, Heading } from "@chakra-ui/react";
 import AboutImage from "./assets/images/aboutimage.png";
-
 import UpArrow from "./assets/icons/up-arrow.svg";
-import Adobe from "./assets/icons/adobe-creativecloud1.svg";
-import Amazon from "./assets/icons/amazonwebservices.svg";
-import Css3 from "./assets/icons/css3.svg";
-import Javascript from "./assets/icons/javascript.svg";
-import Nginx from "./assets/icons/nginx1.svg";
-import Nodejs from "./assets/icons/nodejs.svg";
-import Shopify from "./assets/icons/shopify1.svg";
 
 function App() {
   const el = useRef();
@@ -43,7 +32,6 @@ function App() {
           .to(q(".logo1"), {
             rotate: 90,
             duration: 1,
-            // delay: 2,
             opacity: 0,
             ease: "expo",
           })
@@ -67,7 +55,6 @@ function App() {
           .to(q(".logo2"), {
             rotate: 90,
             duration: 1,
-            // delay: 2,
             opacity: 1,
             ease: "expo",
           })
@@ -129,8 +116,6 @@ function App() {
         scrollTrigger: {
           trigger: ".paradigm",
           start: "top 80%",
-          // toggleActions: "restart pause reverse pause",
-          // end: "top 100px",
           scrub: 1,
         },
         x: 200,
@@ -142,8 +127,6 @@ function App() {
         scrollTrigger: {
           trigger: ".paradigm",
           start: "top bottom",
-          // toggleActions: "restart pause reverse pause",
-          // end: "top 100px",
           scrub: 1,
         },
         x: 50,
@@ -158,8 +141,6 @@ function App() {
         scrollTrigger: {
           trigger: ".aroma",
           start: "top 80%",
-          // toggleActions: "restart  reverse ",
-          // end: "top 100px",
           scrub: 1,
         },
         x: -200,
@@ -170,8 +151,6 @@ function App() {
         scrollTrigger: {
           trigger: ".aroma",
           start: "top bottom",
-          // toggleActions: "restart  reverse ",
-          // end: "top 100px",
           scrub: 1,
         },
         x: -50,
@@ -186,8 +165,6 @@ function App() {
         scrollTrigger: {
           trigger: ".cutculture",
           start: "top 80%",
-          // toggleActions: "restart  reverse ",
-          // end: "top 100px",
           scrub: 1,
         },
         x: 200,
@@ -198,8 +175,6 @@ function App() {
         scrollTrigger: {
           trigger: ".cutculture",
           start: "top bottom",
-          // toggleActions: "restart  reverse ",
-          // end: "top 100px",
           scrub: 1,
         },
         x: 50,

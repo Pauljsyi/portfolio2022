@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link } from "@chakra-ui/react";
 
 const Social = () => {
   return (
     <Flex
       className="media"
       color="#7E827A"
-      // color="#C77966"
       fontFamily="Josefin Sans"
       fontWeight="bold"
     >

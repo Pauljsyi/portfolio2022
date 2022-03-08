@@ -3,28 +3,11 @@ import { Box, Image, Text } from "@chakra-ui/react";
 import Social from "./Social";
 
 import Background from "../assets/images/lights.jpg";
-import Logo from "../assets/images/white-logo.png";
 
 const Hero = () => {
   return (
-    <Box
-      w="100%"
-      h="100vh"
-      margin="auto"
-      position="relative"
-
-      // backgroundColor="rgb(19, 30, 34)"
-    >
-      <Image
-        className="hero-img"
-        // position="absolute"
-        h="100vh"
-        // w={["100%", "100%", "100%"]}
-        // left="25%"
-        // right="25%"
-        src={Background}
-        alt="light bar"
-      />
+    <Box w="100%" h="100vh" margin="auto" position="relative">
+      <Image className="hero-img" h="100vh" src={Background} alt="light bar" />
       <Box w="80%">
         <Text
           position="absolute"
@@ -39,7 +22,6 @@ const Hero = () => {
           fontWeight="bold"
           fontSize={["2rem", "3rem", "4rem"]}
           fontFamily="Comfortaa"
-          // opacity=".6"
         >
           p a u l . j s . y i
         </Text>

@@ -1,15 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { Image, Button, Flex, Heading, Box } from "@chakra-ui/react";
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Input,
-  Textarea,
-} from "@chakra-ui/react";
-import DSG from "../assets/images/dosomethinggreat.jpg";
+
+import { FormLabel, Input, Textarea, Flex, Box } from "@chakra-ui/react";
 
 const Contact = () => {
   const form = useRef();
@@ -36,7 +28,6 @@ const Contact = () => {
       borderRadius="5px"
       m="5rem auto"
       bg="white"
-      // opacity=".6"
       p="0"
     >
       <form
@@ -70,40 +61,6 @@ const Contact = () => {
         </Flex>
       </form>
     </Box>
-
-    // ========================================
-    //===================================
-    // <Box
-    //   h="auto"
-    //   w={["80%", "80%", "50%"]}
-    //   borderRadius="5px"
-    //   m="5rem auto"
-    //   bg="white"
-    //   opacity=".8"
-    //   p="5rem 0"
-    // >
-    //   <FormControl ref={form} onSubmit={sendEmail}>
-    //     <Flex>
-    //       <Box w="50%" p="1rem">
-    //         <FormLabel>First name</FormLabel>
-    //         <Input type="text" name="user_name" placeholder="First name" />
-    //       </Box>
-    //     </Flex>
-    //     <Box w="100%" p="1rem">
-    //       <FormLabel>Email address</FormLabel>
-    //       <Input type="email" name="user_email" placeholder="email address" />
-    //       <FormHelperText>Your email is safe with me ;)</FormHelperText>
-    //     </Box>
-    //     <Box p="1rem">
-    //       <FormLabel>Comment</FormLabel>
-    //       <Textarea
-    //         name="message"
-    //         placeholder="Hello Paul, I'd like to work with you!"
-    //       />
-    //     </Box>
-    //     <Input type="submit" value="Send"></Input>
-    //   </FormControl>
-    // </Box>
   );
 };
 

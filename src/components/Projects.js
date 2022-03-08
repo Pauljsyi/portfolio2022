@@ -7,10 +7,8 @@ import {
   Heading,
   Button,
   Text,
-  List,
   Link,
 } from "@chakra-ui/react";
-import mongodb from "../assets/icons/mongodb.svg";
 
 const Projects = ({
   classname,
