@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -16,7 +16,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Image, Button, Flex, Heading } from "@chakra-ui/react";
 import AboutImage from "./assets/images/aboutimage.png";
 
-import MongoDB from "./assets/icons/mongodb.svg";
+import UpArrow from "./assets/icons/up-arrow.svg";
 import Adobe from "./assets/icons/adobe-creativecloud1.svg";
 import Amazon from "./assets/icons/amazonwebservices.svg";
 import Css3 from "./assets/icons/css3.svg";
@@ -209,10 +209,51 @@ function App() {
     );
   });
 
+  // SCROLL TO TOP FUNCTION
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+
   return (
     <div className="App" ref={el}>
       <Navbar />
       <Hero />
+      {showButton && (
+        <Button
+          onClick={scrollToTop}
+          className="back-to-top"
+          m={[".25rem", "5rem .25rem", "5rem"]}
+          style={{
+            transition: "all 1s ease-in-out",
+            position: "fixed",
+            bottom: "0",
+            right: "0",
+            display: "inline-flex",
+
+            cursor: "pointer",
+            zIndex: "3",
+          }}
+        >
+          <Image src={UpArrow} />
+        </Button>
+      )}
       <Heading
         id="about"
         color="#7E827A"
@@ -258,7 +299,7 @@ function App() {
         image={CutCulture}
         heading="CUT CULTURE"
         text="Website to showcase animations using GSAP and Threejs"
-        brief="Vanilla Javascript project with animations using the hovereffectjs library"
+        brief="Vanilla Javascript landing page with animations using the hovereffectjs library"
         tech="html css javascript gsap threejs hovereffectjs"
         live="http://cutculture.pauljsyi.com/"
         github="https://github.com/Pauljsyi/cutculture"
