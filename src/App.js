@@ -164,7 +164,7 @@ function App() {
       <Navbar />
       <Hero />
       <Heading
-        id="projects"
+        id="about"
         color="#7E827A"
         textAlign="center"
         fontFamily="Satisfy"

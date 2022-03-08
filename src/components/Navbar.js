@@ -40,24 +40,20 @@ const Navbar = () => {
 
       <Flex
         color="#7E827A"
-        m="1rem"
-        fontFamily="Josefin Sans"
+        m="1rem 0"
+        fontFamily="Comfortaa"
         fontWeight="bold"
-        p="1rem"
+        p="1rem 0"
       >
-        <Link
-          href="#about-container"
-          m="1rem"
-          style={{ textDecoration: "none" }}
-        >
-          <Text fontSize={["1em", "1.5em", "2em"]}>About</Text>
+        <Link href="#about" m="1rem" style={{ textDecoration: "none" }}>
+          <Text fontSize={["1em", "1.3em", "1.7em"]}>about</Text>
         </Link>
         <Link href="#projects" m="1rem" style={{ textDecoration: "none" }}>
-          <Text fontSize={["1em", "1.5em", "2em"]}>Work</Text>
+          <Text fontSize={["1em", "1.3em", "1.7em"]}>work</Text>
         </Link>
         <Link href="#contact" style={{ textDecoration: "none" }}>
-          <Text p="1rem" fontSize={["1em", "1.5em", "2em"]}>
-            Contact
+          <Text p="1rem" fontSize={["1em", "1.3em", "1.7em"]}>
+            contact
           </Text>
         </Link>
       </Flex>

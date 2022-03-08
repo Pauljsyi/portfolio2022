@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box, Text, Image, Heading } from "@chakra-ui/react";
 import AboutImage from "../assets/images/aboutimage.png";
-import DSG from "../assets/images/dosomethinggreat.jpg";
+
 import Skill from "./Skill";
 import MongoDB from "../assets/icons/mongodb.svg";
 import Adobe from "../assets/icons/adobe-creativecloud1.svg";
