@@ -127,12 +127,12 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".paradigm",
-          start: "top 100%",
+          start: "top 50%",
           end: "top 30%",
           scrub: 3,
         },
         x: 0,
-        duration: 2,
+        duration: 1,
         opacity: 1,
       }
     );
@@ -153,12 +153,12 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".aroma",
-          start: "top 100%",
+          start: "top 50%",
           end: "top 30%",
           scrub: 1,
         },
         x: 0,
-        duration: 2,
+        duration: 1,
         opacity: 1,
       }
     );
@@ -179,12 +179,12 @@ function App() {
       {
         scrollTrigger: {
           trigger: ".cutculture",
-          start: "top 100%",
+          start: "top 50%",
           end: "top 30%",
           scrub: 1,
         },
         x: 0,
-        duration: 2,
+        duration: 1,
         opacity: 1,
       }
     );
