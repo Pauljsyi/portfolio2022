@@ -129,7 +129,7 @@ function App() {
           start: "top bottom",
           scrub: 1,
         },
-        x: 50,
+        x: 0,
         duration: 2,
         opacity: 1,
       }
@@ -153,7 +153,7 @@ function App() {
           start: "top bottom",
           scrub: 1,
         },
-        x: -50,
+        x: 0,
         duration: 2,
         opacity: 1,
       }
@@ -177,7 +177,7 @@ function App() {
           start: "top bottom",
           scrub: 1,
         },
-        x: 50,
+        x: 0,
         duration: 2,
         opacity: 1,
       }
