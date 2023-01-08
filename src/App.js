@@ -5,9 +5,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import ParadigmGuitar from "./assets/images/paradigmguitar.png";
+import Coffeazy from "./assets/images/coffeazy-img.png";
 import CutCulture from "./assets/images/cutculture.png";
-import AromaCo from "./assets/images/aromaco.png";
+import KlickKlack from "./assets/images/KlickKlack.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Image, Button, Flex, Heading } from "@chakra-ui/react";
@@ -255,24 +255,24 @@ function App() {
         projects
       </Heading>
       <Projects
-        classname="paradigm"
-        image={ParadigmGuitar}
-        heading="PARADIGM GUITAR"
-        text="An e-commerce website for a boutique guitar store"
-        brief="Using the MVC architecture, this website is deployed on Amazon's EC2 cloud server with NGINX as the web server"
-        tech="react node express mongodb aws nginx"
-        live="http://www.paradigmguitar.pauljsyi.com/"
-        github="https://github.com/Pauljsyi/paradigmguitar-showcase"
+        classname="coffeazy"
+        image={Coffeazy}
+        heading="COFFEAZY"
+        text="Coffeazy is an e-commerce website for a local coffee shop that allows the owner to sell coffee products online and promote their amazing coffee."
+        brief="Built using React for its composability and easily maintain different components."
+        tech="react node express mongodb bootstrap stripeAPI"
+        live="https://coffeazy-pauljsyi.vercel.app/"
+        github="https://github.com/Pauljsyi/coffeazy-cra"
       />
       <Projects
         classname="aroma"
         reverse
-        image={AromaCo}
-        heading="AROMA CO"
-        text="An e-commerce website for scented candles"
-        brief="Built a custom Shopify Storefront using React.js and the Shopify Buy SDK. Styled using Chakra UI, persistent cart data using local storage, utilized React Context, and basic animations"
+        image={KlickKlack}
+        heading="KLICK KLACK"
+        text="An e-commerce website for mechanical keyboards"
+        brief="Built a custom Shopify Storefront using React.js and the Shopify Buy SDK. Styled using Chakra UI, persist cart data using local storage, utilized React Context Hook to easily pass data."
         tech="react chakra-ui shopify animista heroku"
-        live="http://www.aromaco.pauljsyi.com/"
+        live="https://klickklack.netlify.app"
         github="https://github.com/Pauljsyi/shopify-react"
       />
       <Projects
