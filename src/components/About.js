@@ -42,11 +42,16 @@ const About = () => {
             functional, and reliable.
             <br />
             <br />
-            With 15 years of experience as a musician along with my skills as a
-            developer, I am dedicated to offer pleasing results both on stage
-            and on the screen. I am creative and passionate about coding,
-            looking for a new adventure in the tech industry.
+            As a musician, I am meticulous, creative, and adaptable; I find that
+            translates perfectly to programming. I have experience in full-stack
+            development in Python, JavaScript, C#, MySQL, and MongoDB in an
+            agile environment. I will continue to strive to be a better
+            programmer today than I was yesterday and continue to overcome new
+            obstacles and challenges. I am passionate about coding and excited
+            for a new adventure in the tech industry.
             <br />
+            In my free time, I like to lift weights, play basketball, and
+            competitive video games.
           </Text>
         </Box>
       </Flex>
