@@ -282,7 +282,7 @@ function App() {
         text='A simple "Save the Date" application where users can login, RSVP, create, read, update and delete weddings.'
         brief="Backend was built with C# due to it's statically typed nature, limiting errors thus making the application easier to maintain."
         tech="C# ASP.NET-Core LINQ Entity-Framework MySQL MVC"
-        live=""
+        live="https://youtu.be/JkkF2Rtk35w"
         github="https://github.com/Pauljsyi/weddingplannerapp"
       />
       <Heading
