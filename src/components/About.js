@@ -50,8 +50,6 @@ const About = () => {
             obstacles and challenges. I am passionate about coding and excited
             for a new adventure in the tech industry.
             <br />
-            In my free time, I like to lift weights, play basketball, and
-            competitive video games.
           </Text>
         </Box>
       </Flex>
