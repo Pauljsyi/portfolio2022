@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box, Text, Image } from "@chakra-ui/react";
-import AboutImage from "../assets/images/aboutimage.png";
+import Paul from "../assets/images/Paul.jpg";
 
 const About = () => {
   return (
@@ -14,14 +14,14 @@ const About = () => {
         margin="5rem auto"
       >
         {/* TO BE ADDED!! */}
-        {/* <Image
-          src={AboutImage}
+        <Image
+          src={Paul}
           p="2rem"
           maxW="25rem"
           w="100%"
           margin="auto"
           opacity="1"
-        /> */}
+        />
         <Box
           position="relative"
           color="white"

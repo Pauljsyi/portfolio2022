@@ -6,7 +6,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Coffeazy from "./assets/images/coffeazy-img.png";
-import CutCulture from "./assets/images/cutculture.png";
+import WeddingPlanner from "./assets/images/weddingplanner.png";
 import KlickKlack from "./assets/images/KlickKlack.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -138,10 +138,10 @@ function App() {
     );
 
     gsap.fromTo(
-      ".aroma",
+      ".klickklack",
       {
         scrollTrigger: {
-          trigger: ".aroma",
+          trigger: ".klickklack",
           start: "top 100%",
           end: "top center",
           scrub: 1,
@@ -152,7 +152,7 @@ function App() {
       },
       {
         scrollTrigger: {
-          trigger: ".aroma",
+          trigger: ".klickklack",
           start: "top 50%",
           end: "top 30%",
           scrub: 1,
@@ -265,25 +265,25 @@ function App() {
         github="https://github.com/Pauljsyi/coffeazy-cra"
       />
       <Projects
-        classname="aroma"
+        classname="klickklack"
         reverse
         image={KlickKlack}
         heading="KLICK KLACK"
         text="An e-commerce website for mechanical keyboards"
-        brief="Built a custom Shopify Storefront using React.js and the Shopify Buy SDK. Styled using Chakra UI, persist cart data using local storage, utilized React Context Hook to easily pass data."
+        brief="Built a custom Shopify Storefront using React.js. Styled using Chakra UI, persist cart data using local storage, utilized React Context Hook to easily pass data."
         tech="react chakra-ui shopify animista heroku"
         live="https://klickklack.netlify.app"
         github="https://github.com/Pauljsyi/shopify-react"
       />
       <Projects
         classname="cutculture"
-        image={CutCulture}
-        heading="CUT CULTURE"
-        text="Website to showcase animations using GSAP and Threejs"
-        brief="Vanilla Javascript landing page with animations using the hovereffectjs library"
-        tech="html css javascript gsap threejs hovereffectjs"
-        live="http://cutculture.pauljsyi.com/"
-        github="https://github.com/Pauljsyi/cutculture"
+        image={WeddingPlanner}
+        heading="Wedding Planner"
+        text='A simple "Save the Date" application where users can login, RSVP, create, read, update and delete weddings.'
+        brief="Backend was built with C# due to it's statically typed nature, limiting errors thus making the application easier to maintain."
+        tech="C# ASP.NET-Core LINQ Entity-Framework MySQL MVC"
+        live=""
+        github="https://github.com/Pauljsyi/weddingplannerapp"
       />
       <Heading
         id="contact"
